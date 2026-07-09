@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rabee'a Odeh</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Tahoma,sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:#050505;
+  color:white;
+  overflow-x:hidden;
+}
+
+.bg{
+  position:fixed;
+  inset:0;
+  background:
+  radial-gradient(circle at top,#5c0000 0%,transparent 35%),
+  linear-gradient(160deg,#050505,#151515,#2b0000);
+  z-index:-3;
+}
+
+.glow{
+  position:fixed;
+  width:260px;
+  height:260px;
+  background:#ff0000;
+  filter:blur(130px);
+  opacity:.25;
+  border-radius:50%;
+  top:8%;
+  left:-20%;
+  animation:moveGlow 6s infinite alternate;
+  z-index:-2;
+}
+
+@keyframes moveGlow{
+  from{transform:translate(0,0)}
+  to{transform:translate(230px,480px)}
+}
+
+.wrap{
+  width:100%;
+  max-width:430px;
+  min-height:100vh;
+  margin:auto;
+  padding:18px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card{
+  width:100%;
+  padding:24px 18px;
+  border-radius:34px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(18px);
+  box-shadow:0 0 45px rgba(255,0,0,.22);
+  text-align:center;
+}
+
+.img-box{
+  width:150px;
+  height:150px;
+  margin:0 auto 16px;
+  padding:5px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#ff0000,#ffffff,#750000);
+  box-shadow:0 0 32px rgba(255,0,0,.5);
+}
+
+.img-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid #111;
+}
+
+h1{
+  font-size:30px;
+  font-weight:900;
+  margin-bottom:7px;
+}
+
+.dot{
+  color:#ff1b1b;
+  font-size:20px;
+}
+
+.title{
+  color:#d1d1d1;
+  font-size:15px;
+  margin-bottom:13px;
+}
+
+.bio{
+  color:#eee;
+  line-height:1.8;
+  font-size:15px;
+  margin-bottom:20px;
+}
+
+.stats{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.stat{
+  flex:1;
+  padding:12px 5px;
+  border-radius:18px;
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.12);
+}
+
+.stat strong{
+  display:block;
+  font-size:20px;
+}
+
+.stat span{
+  color:#bbb;
+  font-size:12px;
+}
+
+.links{
+  display:flex;
+  flex-direction:column;
+  gap:13px;
+}
+
+.link{
+  text-decoration:none;
+  color:white;
+  padding:15px 17px;
+  border-radius:20px;
+  font-size:17px;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.link:active{
+  transform:scale(.96);
+}
+
+.instagram{
+  background:linear-gradient(45deg,#feda75,#d62976,#962fbf,#4f5bd5);
+}
+
+.facebook{
+  background:#1877f2;
+}
+
+.whatsapp{
+  background:#18b956;
+}
+
+.call{
+  background:linear-gradient(135deg,#333,#111);
+}
+
+.icon{
+  font-size:23px;
+}
+
+.share{
+  margin-top:18px;
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:18px;
+  background:white;
+  color:#111;
+  font-size:16px;
+  font-weight:900;
+}
+
+.footer{
+  margin-top:17px;
+  font-size:13px;
+  color:#aaa;
+}
+</style>
+</head><body>
+
+<div class="bg"></div>
+<div class="glow"></div>
+
+<main class="wrap">
+  <section class="card">
+
+    <div class="img-box">
+      <img src="img.png" alt="Rabee'a Odeh">
+    </div>
+
+    <h1>Rabee'a Odeh <span class="dot">●</span></h1>
+
+    <p class="title">Digital Creator</p>
+
+    <p class="bio">
+      ثق بأن الذي خلق الطريق الصعب<br>
+      خلق فيك القوة على اجتيازه 🖤
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>902</strong>
+        <span>Instagram</span>
+      </div>
+
+      <div class="stat">
+        <strong>4.8K</strong>
+        <span>Facebook</span>
+      </div>
+    </div>
+
+    <div class="links">
+
+      <a class="link instagram" href="https://instagram.com/rabeea_odeh" target="_blank">
+        <span>Instagram</span>
+        <span class="icon">📸</span>
+      </a>
+
+      <a class="link facebook" href="https://www.facebook.com/Rabeea.odeh.95" target="_blank">
+        <span>Facebook</span>
+        <span class="icon">📘</span>
+      </a>
+
+      <a class="link whatsapp" href="https://wa.me/962796020986" target="_blank">
+        <span>WhatsApp</span>
+        <span class="icon">💬</span>
+      </a>
+
+      <a class="link call" href="tel:+962796020986">
+        <span>اتصال مباشر</span>
+        <span class="icon">📞</span>
+      </a>
+
+    </div>
+
+    <button class="share" onclick="shareProfile()">مشاركة البروفايل</button>
+
+    <div class="footer">
+      © Rabee'a Odeh
+    </div>
+
+  </section>
+</main>
+
+<script>
+function shareProfile(){
+  if(navigator.share){
+    navigator.share({
+      title:"Rabee'a Odeh",
+      text:"Rabee'a Odeh Profile",
+      url:window.location.href
+    });
+  }else{
+    navigator.clipboard.writeText(window.location.href);
+    alert("تم نسخ رابط الموقع");
+  }
+}
+</script>
+
+</body>
+</html>
